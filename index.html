@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="imageContainer">
+        </div>
+
+        <div class="rightSide">
+
+            <div class="message">
+                <h2>Sign-up now to find your next adventure.</h2>
+            </div>
+            <hr>
+
+            <div class="formContainer">
+                <div class="requiredText">* required fields</div>
+                <form action="" method="get">
+
+                    <section>
+                        <div class="formRow">
+                            <input type="text" 
+                            id="firstName" name="firstName" placeholder="first name"
+                            pattern="^[^0-9]+$" required>
+                            <label for="firstName">First Name *</label>
+                        </div>
+
+                        <div class="formRow">
+                            <input type="text" id="lastName" name="lastName"
+                            placeholder="last name" pattern="^[^0-9]+$" required>
+                            <label for="lastName">Last Name *</label>
+                        </div>
+
+                        <div class="formRow">
+                            <input type="email" id="email" name="email" placeholder="email" required>
+                            <label for="email">Email *</label>
+                        </div>
+
+                        <div class="formRow">
+                            <input type="password" id="password" name="password" placeholder="password" required>
+                            <label for="password">Password *</label>
+                        </div>
+
+                        <div class="formRow">
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password" required>
+                            <label for="confirmPassword">Confirm Password *</label>
+                        </div>
+                    </section>
+
+                    <section class="bottom">
+                        <button type="submit">
+                            Create Account
+                            <img src="noun-mountain.svg" alt="hiker svg">
+                        </button>
+                        <p>Already have an account? <a href="">Log in</a></p>
+                    </section>
+
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

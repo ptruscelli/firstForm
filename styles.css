@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "roboto";
+    src: 
+        url('fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+        url('fonts/roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mixta';
+    src: url('fonts/mixta-sharp-medium-webfont.woff2') format('woff2'),
+         url('fonts/mixta-sharp-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dmsans';
+    src: url('fonts/dmsans-variablefont_opszwght-webfont.woff2') format('woff2'),
+         url('fonts/dmsans-variablefont_opszwght-webfont.woff') format('woff');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h2 {
+    font-family: 'mixta';
+    font-size: 30px;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.imageContainer {
+    flex-basis: 40vw;
+    min-width: 400px;
+    flex-grow: 1;
+    background-image: url("SLVR4707\(1\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.rightSide {
+    flex-basis: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-self: center;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 75%;
+    align-self: center;
+    background-color: rgb(52, 52, 52);
+}
+
+.requiredText {
+    font-family: 'dmsans';
+    color: #959595;
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.formContainer {
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 550px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+section.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom p {
+    align-self: center;
+    padding-top: 14px;
+    font-family: 'dmsans';
+    font-size: 14px;
+}
+
+.bottom a {
+    color: #456fda;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        height: 42px;
+        width: 350px;
+        color: #000000;
+        font-size: 14px;
+        padding-left: 15px;
+        box-shadow: none;
+        transition: ease-in-out 0.2s;
+}
+
+.formRow label {
+    font-family: 'dmsans';
+    font-size: 14px;
+    color: #959595;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding-left: 16px;
+    transition: ease-in-out 0.2s;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+input:focus + label {
+    font-size: 0.6em;
+    top: 0;
+    left: 6px;
+    background-color: white;
+    color: #456fda;
+    padding: 0px 4px 0px 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #456fda;
+}
+
+input:valid {
+    border-color: rgb(31, 167, 31);
+}
+
+
+
+input:valid + label {
+    font-size: 0.6em;
+    top: 0;
+    left: 6px;
+    background-color: white;
+    color: rgb(31, 167, 31);
+    padding: 0px 4px 0px 4px;
+}
+
+input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+input:not(:placeholder-shown):invalid + label {
+    font-size: 0.6em;
+    top: 0;
+    left: 6px;
+    background-color: white;
+    color: red;
+    padding: 0px 4px 0px 4px;
+}
+
+
+button {
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s;
+    padding: 7px 20px;
+    border-radius: 100px;
+    background: #456fda;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    align-self: center;
+    font-family: 'dmsans';
+    transition: ease-in-out 0.1s;
+}
+
+
+button > img {
+    width: 32px;
+    margin-left: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover img {
+    transform: scale(1.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(199, 199, 199, 0.4);
+}
+
+
+button:active {
+  transform: scale(0.98);
+}
+
+
